@@ -6,6 +6,7 @@ public class Main {
         
         Main m = new Main();
         String message = m.getGreeting();
+       // StringBuilder sb = new StringBuilder(m.getGreeting());
         
         System.out.println(message);
         System.out.println(m.reverse(message));
@@ -17,7 +18,8 @@ public class Main {
     }
     
     public String reverse(String message) {
-        return message;
+        StringBuilder sb = new StringBuilder(message);
+        return sb.reverse().toString();
     }
     
 }
